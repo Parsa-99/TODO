@@ -1,0 +1,21 @@
+{
+    "name": "parsa/todo",
+    "description": "A ToDo List Project (with ajax,php and mysql)",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Parsa\\Todo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Parsa Khaleghi",
+            "email": "parsa.khaleghi.17@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "hekmatinasser/verta": "^8.4"
+    }
+}
