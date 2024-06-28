@@ -1,0 +1,32 @@
+#newFolderInput{
+    width:150px; text-align:center; overflow:hidden; transition:0.6s; box-shadow: 0 1px 2px 1px #D3D2D3;padding: 3px 5px; border-radius: 44px; border-color:aquamarine; 
+}
+#newFolderInput:hover{
+    box-shadow: 2px 5px 30px rgba(0,0,0,.1);
+}
+.btn{
+    width: 80%;
+    margin-bottom: 60px;
+    width:150px; text-align:center; overflow:hidden; transition:0.6s; box-shadow: 0 1px 2px 1px #D3D2D3;padding: 3px 5px; border-radius: 44px; border-color:aquamarine; 
+}
+.btn:hover{
+    box-shadow: 2px 5px 30px rgba(0,0,0,.1);
+}
+.great{
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), linear-gradient(to bottom, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), linear-gradient(135deg, #69171a 0%, #092756 100%);
+}
+.nav{
+    border-radius: 24px;
+}
+.main{
+    border-radius: 30px;
+}
+.page{
+    border-radius: 30px;
+}
+.pageHeader{
+    border-radius: 18px;
+}
+#page{
+    border-radius: 18px;
+}

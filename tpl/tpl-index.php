@@ -5,15 +5,16 @@
 <head>
   <meta charset="UTF-8">
   <title><?= SITE_TITLE ?></title>
+  <link rel="stylesheet" href="assets/css/style1.css" />
   <link rel="stylesheet" href="<?=BASE_URL?>assets/css/style.css">
 
 </head>
-<body>
+<body class="great">
 <!-- partial:index.partial.html -->
-<div class="page">
+<div id="page" class="page">
   <div class="pageHeader">
     <div class="title">Dashboard</div>
-    <div class="userPanel"><i class="fa fa-chevron-down"></i><span class="username">John Doe </span><img src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/73.jpg" width="40" height="40"/></div>
+    <div class="userPanel"><i class="fa fa-chevron-down"></i><span class="username">John Doe </span><img src="assets/img/test3.jpeg" width="40" height="40"/></div>
   </div>
   <div class="main">
     <div class="nav">
@@ -23,13 +24,15 @@
         </div>
       </div>
       <div class="menu">
-        <div class="title">Navigation</div>
+        <div class="title">|Folders|</div>
         <ul>
-          <li> <i class="fa fa-home"></i>Home</li>
-          <li><i class="fa fa-signal"></i>Activity</li>
-          <li class="active"> <i class="fa fa-tasks"></i>Manage Tasks</li>
-          <li> <i class="fa fa-envelope"></i>Messages</li>
+          <li> <i class="fa fa-folder"></i>Folder</li>
+          <li class="active"> <i class="fa fa-folder"></i>Current Folder</li>
         </ul>
+        <div>
+          <input style="padding: 3px 5px; border-radius: 16px; border: 1px salmon;" type="text" id = "newFolderInput" placeholder="Add New Folder !"/></br></br>
+          <button id="newFolderBtn" class="btn" >GO</button>
+        </div>
       </div>
     </div>
     <div class="view">
