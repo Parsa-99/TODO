@@ -26,7 +26,12 @@
       <div class="menu">
         <div class="title">|Folders|</div>
         <ul>
-          <li> <i class="fa fa-folder"></i>Folder</li>
+          <?php foreach ($folders as $folder): ?>
+            <li style="color: #232f23;"> 
+              <i class="fa fa-folder"></i><a class="tt" style="text-decoration: none;color:#232f23;" href="?folder_id =<?=$folder->id?>"><?=$folder->name?></a><?=""?>
+              <a class="tt" style="margin-left: 40px;;text-decoration: none;color:#232f23;" href="?delete_folder =<?=$folder->id?>"><i class="fa fa-trash-o"></i></a>
+            </li>
+            <?php endforeach;?>
           <li class="active"> <i class="fa fa-folder"></i>Current Folder</li>
         </ul>
         <div>

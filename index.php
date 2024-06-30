@@ -4,7 +4,12 @@ use Hekmatinasser\Verta\Verta;
 $datetime = verta();
 // if now friday
 // output 6
+if(isset($_GET['delete_folder']) && is_numeric($_GET['delete_folder'])){
+    $deletedCount = deleteFolder($_GET['delete_folder']);
+    echo "$deletedCount folders succesfully deleted!";
+}
 // connect to db and get tasks
 $folders = getFolders();
-$tasks = getTasks();
+// var_dump($folders[0]->name);
+// $tasks = getTasks();
 include "tpl/tpl-index.php";
